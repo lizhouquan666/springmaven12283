@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wanxi.mapper.UserDao">
+    <resultMap id="UserMapper" type="com.wanxi.entity.User">
+        <result column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="email" property="email"/>
+        <result column="password" property="password"/>
+        <result column="sex" property="sex"/>
+        <result column="phone" property="phone"/>
+        <result column="city" property="city"/>
+        <result column="address" property="address"/>
+        <result column="birthday" property="birthday"/>
+        <result column="enable" property="enable"/>
+        <result column="hobby" property="hobby"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="img" property="img"/>
+    </resultMap>
+    <insert id="add" parameterType="User">
+        insert into member_list
+        (id, username, email, password, sex, phone, city, address, birthday, enable, hobby, img)
+        values (#{id}, #{username}, #{email}, #{password}, #{sex}, #{phone}, #{city}, #{address}, #{birthday},
+                #{enable}, #{hobby}, #{img})
+    </insert>
+    <select id="findByUsernameAndPassword" parameterType="User" resultType="User">
+        select *
+        from member_list
+        where username = #{username}
+          and password = #{password}</select>
+    <select id="findAll" parameterType="User" resultType="User">
+        select * from member_list left join files ON member_list.id=files.user_id left join text on
+        member_list.id=text.user_id
+        <if test="start != null">
+            where birthday between #{start}
+        </if>
+        <if test="end != null">
+            and #{end}
+        </if>
+        <if test="username != null">
+            <bind name="pattern" value="'%' + username + '%'"/>
+            and username like #{pattern}
+        </if>
+    </select>
+    <select id="getCount" parameterType="User" resultType="int">
+        SELECT count(id)
+        FROM member_list
+    </select>
+    <update id="enable" parameterType="User">
+        update member_list
+        set enable=1 - enable
+        where id = #{id}
+    </update>
+    <select id="findById" parameterType="User" resultType="User">
+        select *
+        from member_list
+                 left join files ON member_list.id = files.user_id
+                 left join text on
+            member_list.id = text.user_id
+        where member_list.id = #{id}
+    </select>
+    <delete id="del" parameterType="User">
+        delete
+        from member_list
+        where id = #{id}
+    </delete>
+    <update id="update" parameterType="User">
+        update member_list
+        set username=#{username}
+          , address=#{address}
+          , email=#{email}
+          , enable=#{enable}
+          , password=#{password}
+          , phone=#{phone}
+          , sex=#{sex}
+          , update_time=now()
+          , hobby=#{hobby}
+          , birthday=#{birthday}
+          , text=#{text}
+        where id = #{id}
+    </update>
+</mapper>

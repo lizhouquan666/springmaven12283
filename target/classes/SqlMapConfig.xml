@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+
+        <!--配置允许懒加载-->
+        <!--你可以理解为按需加载，当我调用到关联的数据时才与数据库交互否则不交互。-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--取消关联查询积极性-->
+<!--        true：-->
+<!--        只要调用任意具有懒加载特性的对象的任意一个属性将完整加载整个对象，即触发级联效果。-->
+<!--        false：-->
+<!--        只加载调用的属性，不调用的属性不加载。-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!--哪些方法触发关系查询-->
+        <setting name="lazyLoadTriggerMethods" value="clone"/>
+    </settings>
+    <!-- 别名的定义 -->
+    <typeAliases>
+        <!-- 批量定义别名 ，指定包名，自动扫描包中的类，别名即为类名，首字母大小写无所谓-->
+        <package name="com.wanxi.entity"/>
+    </typeAliases>
+    <!--分页插件-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="mysql"/>
+        </plugin>
+    </plugins>
+    <mappers>
+        <!-- 通过扫描包的方式来进行批量加载映射文件 -->
+        <package name="com.wanxi.mapper"/>
+    </mappers>
+
+</configuration>

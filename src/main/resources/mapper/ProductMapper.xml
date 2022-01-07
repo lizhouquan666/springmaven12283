@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wanxi.mapper.ProductDao">
+    <resultMap id="UserMapper" type="com.wanxi.entity.ProductModel">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="marketPrivce" property="marketPrivce"/>
+        <result column="normalPrice" property="normalPrice"/>
+        <result column="content" property="content"/>
+        <result column="imgHref" property="imgHref"/>
+        <result column="isTop" property="isTop"/>
+        <result column="isHot" property="isHot"/>
+        <result column="isRecommend" property="isRecommend"/>
+        <result column="cuisineId" property="cuisineId"/>
+        <result column="cuisineName" property="cuisineName"/>
+    </resultMap>
+<!--    MyBatis的传入参数parameterType类型分两种-->
+
+<!--    1. 1. 基本数据类型：int,string,long,Date;-->
+
+<!--    1. 2. 复杂数据类型：类和Map-->
+<!--    通过 resultType 指定查询的结果是 ProductModel 类型的数据-->
+<!--    只需要指定 resultType 的类型，MyBatis 会自动将查询的结果映射成 JavaBean 中的属性-->
+    <insert id="add" parameterType="ProductModel">
+        insert into member_list
+        (id, username, email, password, sex, phone, city, address, birthday, enable, hobby, img)
+        values (#{id}, #{username}, #{email}, #{password}, #{sex}, #{phone}, #{city}, #{address}, #{birthday},
+                #{enable}, #{hobby}, #{img})
+    </insert>
+    <select id="findAll" parameterType="ProductModel" resultType="ProductModel">
+        SELECT p.*,c.name cuisineName FROM product  p left join cuisine c on  p.cuisine_id=c.id
+<!--        <if test="start != null">-->
+<!--            where birthday between #{start}-->
+<!--        </if>-->
+<!--        <if test="username != null">-->
+<!--            <bind name="pattern" value="'%' + username + '%'"/>-->
+<!--            and name like #{pattern}-->
+<!--        </if>-->
+    </select>
+    <select id="getCount" parameterType="ProductModel" resultType="int">
+        SELECT count(id)
+        FROM product
+    </select>
+    <update id="enable" parameterType="ProductModel">
+        update product
+        set enable=1 - enable
+        where id = #{id}
+    </update>
+    <select id="findById" parameterType="ProductModel" resultType="ProductModel">
+        select *
+        from product
+                 left join files ON product.id = files.user_id
+                 left join text on
+            product.id = text.user_id
+        where product.id = #{id}
+    </select>
+    <delete id="del" parameterType="ProductModel">
+        delete
+        from member_list
+        where id = #{id}
+    </delete>
+    <update id="update" parameterType="ProductModel">
+        update member_list
+        set username=#{username}
+          , address=#{address}
+          , email=#{email}
+          , enable=#{enable}
+          , password=#{password}
+          , phone=#{phone}
+          , sex=#{sex}
+          , update_time=now()
+          , hobby=#{hobby}
+          , birthday=#{birthday}
+          , text=#{text}
+        where id = #{id}
+    </update>
+</mapper>
