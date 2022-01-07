@@ -6,314 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="184126a9-67fd-4e59-bdb7-6bfb8637cc30" name="Default Changelist" comment="productMapper sql语句的改写">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmaven1228.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/controller/CodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/entity/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/entity/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/entity/ProductModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/exception/ExceptionResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/interceptor/Interceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/result/ResultModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/result/ResultTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/result/ServiceChan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/tool/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-cate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-role.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-rule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/cate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/city.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/css/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/css/xadmin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/fonts/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/fonts/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/fonts/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/fonts/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/images/aiwrap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/js/xadmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/js/xcity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/log.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/member-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/member-del.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/member-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/member-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/member-list1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/member-password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/order-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/order-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/order-list1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/role-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/unicode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/welcome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/X-admin/welcome1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/theme1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/theme2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/theme3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/theme4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/theme5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/xadmin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/news/news-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/news/news-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/news/news-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/pic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/product/product-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/product/product-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/product/product-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/team/team-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/team/team-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/team/team-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/user/member-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/user/member-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/user/member-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/user/member-list1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/user/member-updata-pass.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/welcome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/%7B%7Bd.imgHref%7D%7D" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/a1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/a2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/about_banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/af.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/b1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/b2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/c1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/c2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/cq.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/d1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/d2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/e1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/e2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/f1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/f1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/f1_0hil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/f2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/f2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/f4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gj.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/i_banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/i_banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/k9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/left_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ls10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ls2_szam.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ls3_xs6q.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ls4_4sn9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ls5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ls6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ls7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ls8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ls9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/mt-0908-content-bg02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/n1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/n3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/post-classic-2-418x315_dgl6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/right_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/youshi_vvgu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/cuisine-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/date.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/member-add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/member-edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/member-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/member-list1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/myAjax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/news/news-add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/news/news-edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/news/news-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/news/newsId-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/pic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/product-add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/product-edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/product-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/serviceType-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/team/team-add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/team/team-edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/team/team-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/team/teamId-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/welcome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/0f376fb6-93f5-489e-a730-957082438e0b-20210819092114_11093.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/11e0b6f3-0373-468e-abd0-dd0082ba0184-QQ图片20211104115727.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/49c3e081-b1e2-4c71-bfd4-bfe4af356201-20210819092114_11093.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/4b5407ba-54c2-4d14-97be-7e15d7a36605-QQ图片20211104115727.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/82bda915-3917-4ba1-82f8-f44c8be590a9-20210819092114_11093.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/906fb46b-48a1-487c-a12b-56ed60aab582-20210819092114_11093.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/d0798685-d470-4323-8e89-d83c26d93b47-QQ图片20211104115727.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/f4ebe116-d75e-4976-9ccb-f1b7ae808380-20210819092114_11093.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload/f9601fda-0761-4443-af93-aa03446e4758-20210819092114_11093.gif" afterDir="false" />
-    </list>
+    <list default="true" id="184126a9-67fd-4e59-bdb7-6bfb8637cc30" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -357,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+            <state relative-caret-position="333">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -851,12 +544,20 @@
       <workItem from="1641046558972" duration="18141000" />
       <workItem from="1641347723031" duration="6177000" />
       <workItem from="1641432431268" duration="11069000" />
-      <workItem from="1641517409658" duration="18356000" />
+      <workItem from="1641517409658" duration="18618000" />
     </task>
+    <task id="LOCAL-00001" summary="productMapper sql语句的改写">
+      <created>1641545015006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641545015006</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87619000" />
+    <option name="totallyTimeSpent" value="87881000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -871,7 +572,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -882,7 +583,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.03253796" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2505423" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -1296,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        <state relative-caret-position="333">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
