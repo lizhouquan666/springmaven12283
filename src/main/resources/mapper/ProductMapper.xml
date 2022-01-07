@@ -17,7 +17,7 @@
     </resultMap>
 <!--    MyBatis的传入参数parameterType类型分两种-->
 
-<!--    1. 1. 基本数据类型：int,string,long,Date;-->
+<!--    1. 1.基本数据类型：int,string,long,Date;-->
 
 <!--    1. 2. 复杂数据类型：类和Map-->
 <!--    通过 resultType 指定查询的结果是 ProductModel 类型的数据-->
