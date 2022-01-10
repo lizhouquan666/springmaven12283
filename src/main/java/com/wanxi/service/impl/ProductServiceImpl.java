@@ -65,4 +65,10 @@ public class ProductServiceImpl implements ProductService {
     public ResultModel addText(ProductModel productModel) {
         return ResultModel.getModel (dao.addText (productModel));
     }
+
+    @Override
+    public ResultModel findServiceType(ProductModel productModel) {
+        List<ProductModel> productModels = dao.findServiceType(productModel);
+        return ResultModel.getModel(productModels);
+    }
 }

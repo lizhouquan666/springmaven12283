@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wanxi.mapper.NewDao">
+    <resultMap id="NewMapper" type="com.wanxi.entity.NewModel">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="news_id" property="news_id"/>
+        <result column="newsTypeName" property="newsTypeName"/>
+        <result column="content" property="content"/>
+        <result column="imgHref" property="imgHref"/>
+        <result column="isTop" property="update_time"/>
+        <result column="update_time" property="is_show"/>
+        <result column="enable" property="enable"/>
+    </resultMap>
+<!--    MyBatis的传入参数parameterType类型分两种-->
+
+<!--    1. 1.基本数据类型：int,string,long,Date;-->
+
+<!--    1. 2. 复杂数据类型：类和Map-->
+<!--    通过 resultType 指定查询的结果是 NewModel 类型的数据-->
+<!--    只需要指定 resultType 的类型，MyBatis 会自动将查询的结果映射成 JavaBean 中的属性-->
+    <insert id="add" parameterType="NewModel">
+        INSERT INTO `lv_shi`.`lv_shi_news_list` (`name`, `content`, `news_id`, `update_time`,`enable`, `is_show`)
+        VALUES (#{name}, #{content}, #{news_id}, now(), #{enable}, #{is_show})
+    </insert>
+    <select id="findAll" parameterType="NewModel" resultType="NewModel">
+        SELECT p.*,c.name newsTypeName FROM lv_shi_news_list p left join lv_shi_newid c on  p.news_id=c.id
+<!--        <if test="start != null">-->
+<!--            where birthday between #{start}-->
+<!--        </if>-->
+<!--        <if test="name != null">-->
+<!--            <bind name="pattern" value="'%' + name + '%'"/>-->
+<!--            and name like #{pattern}-->
+<!--        </if>-->
+    </select>
+    <select id="getCount" parameterType="NewModel" resultType="int">
+        select count(*) count from lv_shi_news_list p left join lv_shi_newid c on  p.news_id=c.id
+    </select>
+    <update id="enable" parameterType="NewModel">
+        update lv_shi_news_list
+        set enable=1 - enable
+        where id = #{id}
+    </update>
+    <select id="findById" parameterType="NewModel" resultType="NewModel">
+        select * from lv_shi_news_list where id=#{id}
+    </select>
+    <select id="findNewId" parameterType="NewModel" resultType="NewModel">
+        select * from lv_shi_newid  where is_show=#{enable} order by id desc
+    </select>
+    <delete id="del" parameterType="NewModel">
+        delete from lv_shi_news_list where id=#{id}
+    </delete>
+    <update id="update" parameterType="NewModel">
+        update lv_shi_news_list
+        set name=#{name}
+          , content=#{normalPrice}
+          , news_id=#{price}
+          , update_time=#{imgHref}
+          , enable=#{content}
+          , service_id=#{service_id}
+          , is_show=#{is_show}
+        where id = #{id}
+    </update>
+</mapper>

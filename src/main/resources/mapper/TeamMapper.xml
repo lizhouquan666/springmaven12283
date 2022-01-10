@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wanxi.mapper.TeamDao">
+    <resultMap id="TeamMapper" type="com.wanxi.entity.TeamModel">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="content" property="content"/>
+        <result column="imgHref" property="imgHref"/>
+        <result column="is_show" property="is_show"/>
+        <result column="enable" property="enable"/>
+        <result column="team_Id" property="team_Id"/>
+        <result column="teamTypeName" property="teamTypeName"/>
+        <result column="teamType" property="teamType"/>
+    </resultMap>
+<!--    MyBatis的传入参数parameterType类型分两种-->
+
+<!--    1. 1.基本数据类型：int,string,long,Date;-->
+
+<!--    1. 2. 复杂数据类型：类和Map-->
+<!--    通过 resultType 指定查询的结果是 TeamModel 类型的数据-->
+<!--    只需要指定 resultType 的类型，MyBatis 会自动将查询的结果映射成 JavaBean 中的属性-->
+    <insert id="add" parameterType="TeamModel">
+        INSERT INTO `lv_shi`.`lv_shi_team` (`img_href`, `name`, `team_id`, `content`, `enable`)
+        VALUES (#{imgHref}, #{name}, #{team_Id}, #{content}, #{enable})
+    </insert>
+    <select id="findAll" parameterType="TeamModel" resultType="TeamModel">
+        SELECT p.*,c.name teamTypeName FROM lv_shi_team p left join lv_shi_teamid c on  p.team_id=c.id
+<!--        <if test="start != null">-->
+<!--            where birthday between #{start}-->
+<!--        </if>-->
+<!--        <if test="name != null">-->
+<!--            <bind name="pattern" value="'%' + name + '%'"/>-->
+<!--            and name like #{pattern}-->
+<!--        </if>-->
+    </select>
+    <select id="getCount" parameterType="TeamModel" resultType="int">
+        select count(*) count from lv_shi_team p left join lv_shi_teamid c on  p.Team_id=c.id
+    </select>
+    <update id="enable" parameterType="TeamModel">
+        update lv_shi_team
+        set enable=1 - enable
+        where id = #{id}
+    </update>
+    <select id="findById" parameterType="TeamModel" resultType="TeamModel">
+        select * from lv_shi_team where id=#{id}
+    </select>
+    <select id="findTeamId" parameterType="TeamModel" resultType="TeamModel">
+        select * from lv_shi_teamid  where is_show=#{enable} order by id desc
+    </select>
+    <delete id="del" parameterType="TeamModel">
+        delete from lv_shi_team where id=#{id}
+    </delete>
+    <update id="update" parameterType="TeamModel">
+        update lv_shi_team
+        set name=#{name}
+          , img_href=#{imgHref}
+          , team_id=#{team_Id}
+          , content=#{content}
+          , enable=#{enable}
+        where id = #{id}
+    </update>
+</mapper>

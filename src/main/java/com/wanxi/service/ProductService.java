@@ -9,4 +9,6 @@ public interface ProductService extends BaseService<ProductModel>{
 
 
     ResultModel addText(ProductModel productModel);
+
+    ResultModel findServiceType(ProductModel product);
 }

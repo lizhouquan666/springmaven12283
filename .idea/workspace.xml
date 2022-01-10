@@ -2,12 +2,580 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="springmaven1228:war exploded" />
+      <artifact name="springmaven12283:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="184126a9-67fd-4e59-bdb7-6bfb8637cc30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/springmaven12283.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/controller/NewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/controller/TeamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/entity/ImgModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/entity/NewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/entity/TeamModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/NewDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/TeamDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/NewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/TeamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/NewServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/TeamServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/NewMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/TeamMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanxi/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanxi/entity/ProductModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/entity/ProductModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanxi/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-cate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-role.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/admin-rule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/cate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/city.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/css/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/css/theme5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/css/xadmin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/echarts8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/fonts/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/fonts/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/fonts/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/fonts/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/images/aiwrap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/js/xadmin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/js/xcity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/lib/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/member-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/member-del.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/member-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/member-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/member-list1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/member-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/order-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/order-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/order-list1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/role-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/unicode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/X-admin/welcome1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/theme1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/theme2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/theme3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/theme4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/theme5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/xadmin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/news/news-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/news/news-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/news/news-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/pic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/product/product-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/product/product-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/product/product-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/team/team-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/team/team-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/team/team-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/user/member-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/user/member-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/user/member-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/user/member-list1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/user/member-updata-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/%7B%7Bd.imgHref%7D%7D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/a1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/a2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/about_banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/af.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/b1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/b2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/c1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/c2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/cq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/d1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/d2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/e2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/f1_0hil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/f2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/f4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/gj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/i_banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/i_banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/k9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/left_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ls10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ls2_szam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ls3_xs6q.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ls4_4sn9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ls5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ls6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ls7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ls8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/ls9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/mt-0908-content-bg02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/n1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/n3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/post-classic-2-418x315_dgl6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/right_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/youshi_vvgu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cuisine-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/member-add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/member-edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/member-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/member-list1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myAjax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/news/news-add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/news/news-edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/news/news-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/news/newsId-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/pic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/product-add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/product-edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/product-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/serviceType-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/team/team-add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/team/team-edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/team/team-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/team/teamId-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/welcome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/0f376fb6-93f5-489e-a730-957082438e0b-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/11e0b6f3-0373-468e-abd0-dd0082ba0184-QQ图片20211104115727.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/49c3e081-b1e2-4c71-bfd4-bfe4af356201-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/4b5407ba-54c2-4d14-97be-7e15d7a36605-QQ图片20211104115727.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/82bda915-3917-4ba1-82f8-f44c8be590a9-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/906fb46b-48a1-487c-a12b-56ed60aab582-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/d0798685-d470-4323-8e89-d83c26d93b47-QQ图片20211104115727.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/f4ebe116-d75e-4976-9ccb-f1b7ae808380-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/f9601fda-0761-4443-af93-aa03446e4758-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/admin-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/admin-cate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/admin-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/admin-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/admin-role.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/admin-rule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/cate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/city.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/css/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/css/theme1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/css/theme2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/css/theme3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/css/theme4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/css/theme5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/css/xadmin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/echarts1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/echarts2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/echarts3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/echarts4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/echarts5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/echarts6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/echarts7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/echarts8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/fonts/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/fonts/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/fonts/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/fonts/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/images/aiwrap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/js/xadmin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/js/xcity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/lib/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/member-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/member-del.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/member-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/member-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/member-list1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/member-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/order-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/order-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/order-list1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/role-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/unicode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/X-admin/welcome1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/css/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/css/theme1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/css/theme2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/css/theme3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/css/theme4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/css/theme5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/css/xadmin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/news/news-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/news/news-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/news/news-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/pic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/product/product-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/product/product-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/product/product-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/team/team-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/team/team-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/team/team-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/user/member-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/user/member-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/user/member-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/user/member-list1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/user/member-updata-pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/html/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/%7B%7Bd.imgHref%7D%7D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/a1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/a2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/about_banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/af.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/b1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/b2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/c1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/c2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/cq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/d1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/d2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/e2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/f1_0hil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/f2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/f4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/gj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/i_banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/i_banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/k9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/left_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/ls10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/ls2_szam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/ls3_xs6q.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/ls4_4sn9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/ls5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/ls6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/ls7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/ls8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/ls9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/mt-0908-content-bg02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/n1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/n3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/post-classic-2-418x315_dgl6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/right_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/img/youshi_vvgu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/cuisine-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/member-add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/member-edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/member-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/member-list1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/myAjax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/news/news-add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/news/news-edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/news/news-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/news/newsId-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/pic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/product-add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/product-edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/product-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/serviceType-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/team/team-add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/team/team-edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/team/team-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/team/teamId-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/js/welcome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/upload/0f376fb6-93f5-489e-a730-957082438e0b-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/upload/11e0b6f3-0373-468e-abd0-dd0082ba0184-QQ图片20211104115727.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/upload/49c3e081-b1e2-4c71-bfd4-bfe4af356201-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/upload/4b5407ba-54c2-4d14-97be-7e15d7a36605-QQ图片20211104115727.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/upload/82bda915-3917-4ba1-82f8-f44c8be590a9-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/upload/906fb46b-48a1-487c-a12b-56ed60aab582-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/upload/d0798685-d470-4323-8e89-d83c26d93b47-QQ图片20211104115727.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/upload/f4ebe116-d75e-4976-9ccb-f1b7ae808380-20210819092114_11093.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-maven12.28.3-1.0-SNAPSHOT/upload/f9601fda-0761-4443-af93-aa03446e4758-20210819092114_11093.gif" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,104 +591,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/UserDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/TeamController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/ProductDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="513">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/UploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-774">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/Base.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/ProductModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/BaseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/ProductServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2516">
-              <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#1913#1914#0" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -151,12 +649,33 @@
       <find>je</find>
       <find>page</find>
       <find>User</find>
+      <find>junit</find>
+      <find>commons-io</find>
+      <find>commons-fileupload</find>
+      <find>javax.servlet</find>
+      <find>lv_shi_service.id</find>
+      <find>normalPrice</find>
+      <find>imgHref</find>
+      <find>enable</find>
+      <find>mapperScanner</find>
+      <find>new</find>
+      <find>product</find>
+      <find>Product</find>
+      <find>lv_shi_service_product</find>
+      <find>UPLOAD_DIRECTORY</find>
+      <find>webPath</find>
     </findStrings>
     <replaceStrings>
       <replace>wanxi</replace>
       <replace>Product</replace>
       <replace>product</replace>
       <replace>ProductModel</replace>
+      <replace>new</replace>
+      <replace>New</replace>
+      <replace>model</replace>
+      <replace>team</replace>
+      <replace>Team</replace>
+      <replace>lv_shi_team</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -172,10 +691,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/wanxi/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/controller/loginController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/entity/Base.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/entity/Page.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/UserDao.java" />
@@ -193,7 +708,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/login.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/xadmin.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/result/ResultModel.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/html/index.html" />
@@ -201,17 +715,33 @@
         <option value="$PROJECT_DIR$/src/main/webapp/html/user/member-list1.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/member-list.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/entity/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/ProductDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/entity/ImgModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wanxi/entity/ProductModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/entity/NewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/service/NewService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/NewDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/NewMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/controller/NewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/NewServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/entity/TeamModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/service/TeamService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/TeamServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/mapper/TeamDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/controller/TeamController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/TeamMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wanxi/controller/UploadController.java" />
       </list>
     </option>
   </component>
@@ -229,14 +759,20 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="spring-maven12.28.3" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-maven12.28.3" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1388" />
-    <option name="width" value="540" />
-    <option name="height" value="745" />
+    <option name="x" value="468" />
+    <option name="y" value="65" />
+    <option name="width" value="1294" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -292,110 +828,25 @@
               <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wanxi" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wanxi" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wanxi" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wanxi" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wanxi" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wanxi" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wanxi" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
               <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
               <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-maven12.28.3-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springmaven12283" type="b2602c69:ProjectViewProjectNode" />
               <item name="springmaven12283" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-maven12.28.3-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,25 +865,25 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.gitee" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\25677\IdeaProjects\springmaven12283\src\main\resources\mapper" />
+      <recent name="C:\Users\Master\IdeaProjects\springmaven12283\src\main\resources\mapper" />
+      <recent name="C:\Users\Master\IdeaProjects\springmaven12283\src\main\webapp\js" />
+      <recent name="C:\Users\Master\IdeaProjects\springmaven12283\src\main\webapp\html" />
       <recent name="C:\Users\Master\IdeaProjects\springmaven12283\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wanxi.mapper" />
       <recent name="com.wanxi.service.impl" />
+      <recent name="com.wanxi.service" />
       <recent name="com.wanxi.entity" />
       <recent name="com.wanxi.controller" />
-      <recent name="com.wanxi.exception" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Master\IdeaProjects\springmaven12283\src\main\resources\mapper" />
-      <recent name="C:\Users\Master\IdeaProjects\springmaven12283\src\main\webapp\js" />
-      <recent name="C:\Users\Master\IdeaProjects\springmaven12283\src\main\webapp\html" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Master\IdeaProjects\springmaven12283\src\main\webapp" />
-      <recent name="C:\Users\Master\IdeaProjects\springmaven12283\src\main\webapp\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -448,11 +899,11 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="spring-maven" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.56" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="spring-maven" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.55" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="springmaven1228:war exploded">
+        <artifact name="springmaven12283:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -460,6 +911,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmaven12283" />
+        <option name="JNDI_PORT" value="1090" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -467,7 +919,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58874" />
+        <option name="DEBUG_PORT" value="58999" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -518,6 +970,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="springmaven1228:war exploded" />
+          <artifact name="springmaven12283:war exploded" />
         </option>
       </method>
     </configuration>
@@ -546,6 +999,17 @@
       <workItem from="1641432431268" duration="11069000" />
       <workItem from="1641517409658" duration="18765000" />
       <workItem from="1641545359981" duration="103000" />
+      <workItem from="1641551876512" duration="5465000" />
+      <workItem from="1641560949026" duration="221000" />
+      <workItem from="1641561231980" duration="377000" />
+      <workItem from="1641561963968" duration="2007000" />
+      <workItem from="1641604994542" duration="5621000" />
+      <workItem from="1641623718317" duration="3583000" />
+      <workItem from="1641628088465" duration="6982000" />
+      <workItem from="1641693341144" duration="3141000" />
+      <workItem from="1641732276935" duration="4559000" />
+      <workItem from="1641780986492" duration="3502000" />
+      <workItem from="1641795922875" duration="3185000" />
     </task>
     <task id="LOCAL-00001" summary="productMapper sql语句的改写">
       <created>1641545015006</created>
@@ -565,7 +1029,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88131000" />
+    <option name="totallyTimeSpent" value="126774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -577,10 +1041,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1408" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1444563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15739268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -591,7 +1055,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27114967" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20565149" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -604,11 +1068,11 @@
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info active="true" anchor="bottom" id="Eval Reset" order="15" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.3288854" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.061833687" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.06160572" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -624,201 +1088,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="productMapper sql语句的改写" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/css/font.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/X-admin/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1356">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myAjax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="89" column="41" lean-forward="true" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/xadmin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/interceptor/Interceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/exception/ExceptionResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="566" selection-start-line="566" selection-end-line="566" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1926">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="e#603#622#0" />
-            <element signature="e#1050#1065#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3145">
-          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.0/mybatis-spring-1.3.0.jar!/org/mybatis/spring/MyBatisExceptionTranslator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/user/member-list1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5994">
-          <caret line="162" column="19" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/pic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/pic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/font.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/member-list.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/member-list1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="148" column="34" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1369">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/pic.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/pic.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/font.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/member-list.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/member-list1.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/login.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/html/welcome.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/result/ResultModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -846,54 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="204" column="64" selection-start-line="204" selection-start-column="62" selection-end-line="204" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/CodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-481">
-          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -901,67 +1129,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/Base.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="459">
           <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/ProductModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="297">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="221" column="31" lean-forward="true" selection-start-line="221" selection-start-column="31" selection-end-line="221" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/ImgModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/CodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -970,15 +1176,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="162">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/ProductServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="903">
+          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -987,8 +1193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+        <state relative-caret-position="528">
+          <caret line="72" column="34" lean-forward="true" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#423#424#0" expanded="true" />
@@ -999,10 +1205,255 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/NewService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/NewDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/NewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/NewMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1431">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1161">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/NewServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1603">
+          <caret line="71" column="59" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/NewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/interceptor/Interceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/exception/ExceptionResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/ProductModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/TeamService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/mapper/TeamDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/service/impl/TeamServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1875#1876#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/entity/TeamModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TeamMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/post-classic-2-418x315_dgl6.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/mt-0908-content-bg02.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/TeamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="108">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wanxi/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-774">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,11 +1507,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>springmaven1228</last-edited>
+          <last-edited>springmaven12283</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

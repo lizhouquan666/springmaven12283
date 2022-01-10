@@ -2,10 +2,12 @@ package com.wanxi.controller;
 
 
 import com.github.pagehelper.PageHelper;
-import com.wanxi.entity.ProductModel;
+import com.wanxi.entity.NewModel;
 import com.wanxi.result.ResultModel;
-import com.wanxi.service.ProductService;
-import org.springframework.web.bind.annotation.*;
+import com.wanxi.service.NewService;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import redis.clients.jedis.Jedis;
 
 //String[] allowedHeaders:
@@ -20,71 +22,71 @@ import redis.clients.jedis.Jedis;
 //https://zhuanlan.zhihu.com/p/66789473
 @CrossOrigin(allowCredentials="true", allowedHeaders="*")
 @RestController
-@RequestMapping("product")
-public class ProductController {
-    private ProductService productService;
+@RequestMapping("news")
+public class NewController {
+    private NewService newService;
     private Jedis jedis = new Jedis();
 
-    private ProductController(ProductService service) {
-        this.productService = service;
+    private NewController(NewService service) {
+        this.newService = service;
     }
 
     @RequestMapping("findAll")
-    public ResultModel findAll(ProductModel product) {
+    public ResultModel findAll(NewModel model) {
         int count;
         ResultModel resultModel;
         //判断jedis中的count是否存在 减少sql查询
         if (jedis.get("count") == null) {
-            count = productService.getCount(product).getCount();
+            count = newService.getCount(model).getCount();
             jedis.set("count", String.valueOf(count), "XX", "EX", 600);
         } else {
             count = Integer.valueOf(jedis.get("count"));
         }
         //分页
-        PageHelper.startPage(product.getPage(), product.getLimit());
-        resultModel = productService.findAll(product);
+        PageHelper.startPage(model.getPage(), model.getLimit());
+        resultModel = newService.findAll(model);
         resultModel.setCount(count);
         return resultModel;
     }
 
 
     @RequestMapping("enable")
-    public ResultModel enable(ProductModel product) {
-        ResultModel resultModel = productService.enable(product);
+    public ResultModel enable(NewModel model) {
+        ResultModel resultModel = newService.enable(model);
         return resultModel;
     }
 
     @RequestMapping("findById")
-    public ResultModel findById(ProductModel product) {
-        ResultModel resultModel = productService.findById(product);
+    public ResultModel findById(NewModel model) {
+        ResultModel resultModel = newService.findById(model);
         return resultModel;
     }
 
     @RequestMapping("delete")
-    public ResultModel delete(ProductModel product) {
-        ResultModel resultModel = productService.del(product);
+    public ResultModel delete(NewModel model) {
+        ResultModel resultModel = newService.del(model);
         return resultModel;
     }
 
     @RequestMapping("add")
-    public ResultModel add(ProductModel product) {
+    public ResultModel add(NewModel model) {
         int count;
-        count = productService.getCount(product).getCount();
+        count = newService.getCount(model).getCount();
         jedis.set("count", String.valueOf(count));
         jedis.expire("count", 600);
-        ResultModel resultModel = productService.add(product);
+        ResultModel resultModel = newService.add(model);
         return resultModel;
     }
 
     @RequestMapping("update")
-    public ResultModel edit(ProductModel product) {
-        ResultModel resultModel = productService.update(product);
+    public ResultModel edit(NewModel model) {
+        ResultModel resultModel = newService.update(model);
         return resultModel;
     }
 
-    @RequestMapping("findServiceType")
-    public ResultModel findServiceType(ProductModel product) {
-        ResultModel resultModel = productService.findServiceType(product);
+    @RequestMapping("findNewId")
+    public ResultModel findNewId(NewModel model) {
+        ResultModel resultModel = newService.findNewId(model);
         return resultModel;
     }
 }
