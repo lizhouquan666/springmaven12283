@@ -51,4 +51,5 @@
         <property name="prefix" value="/"/>
         <property name="suffix" value=".html"/>
     </bean>
+    <bean id="exceptionHandler" class="com.wanxi.exception.ExceptionResolver"/>
 </beans>

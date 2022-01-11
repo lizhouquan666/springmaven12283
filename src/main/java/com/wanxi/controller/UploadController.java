@@ -30,8 +30,10 @@ public class UploadController {
     // 上传文件存储目录
     private static final String UPLOAD_DIRECTORY = "img";
 
-    //上传文件前端静态路径
-    private static final String UPLOAD_PATH = "C:\\Users\\25677\\IdeaProjects\\qqqian\\qian\\web";
+    //上传文件前端静态路径C:\Users\Master\IdeaProjects\qian\out
+    private static final String UPLOAD_PATH = "C:\\Users\\Master\\IdeaProjects\\qian\\qian\\web";
+    //上传文件前端out路径C:\Users\Master\IdeaProjects\qian\out
+    private static final String UPLOAD_OUTPATH = "C:\\Users\\Master\\IdeaProjects\\qian\\out";
     // 上传配置
     private static final int MEMORY_THRESHOLD = 1024 * 1024 * 3;  // 3MB
     private static final int MAX_FILE_SIZE = 1024 * 1024 * 40; // 40MB
@@ -74,24 +76,24 @@ public class UploadController {
         // 构造临时路径来存储上传的文件
         // 这个路径相对当前应用的目录
 //                                                        获取绝对路径
-        //后端路径
+        //out路径C:\Users\Master\IdeaProjects\qian\out\artifacts\qian_war_exploded\img
 //        String uploadPath = request.getServletContext().getRealPath("./") + File.separator + UPLOAD_DIRECTORY;
-        String uploadPath = request.getServletContext().getRealPath("./");
+
+//        String uploadPath = request.getServletContext().getRealPath("./");
         //前端路径
         String uploadPaths = UPLOAD_PATH + File.separator + UPLOAD_DIRECTORY;
-//        String webPath = uploadPath.split("target")[0];
-//        String path = uploadPath + "target/webapp/" + UPLOAD_DIRECTORY;
-        String path = uploadPath  + UPLOAD_DIRECTORY;
+//        String webPath = UPLOAD_OUTPATH.split("out")[0];
+        String path = UPLOAD_OUTPATH + "/artifacts/qian_war_exploded/" + File.separator + UPLOAD_DIRECTORY;
         String fileName = "";
         // 如果目录不存在则创建
         File uploadDirs = new File(uploadPaths);
         if (!uploadDirs.exists()) {
             uploadDirs.mkdirs();
         }
-        File uploadDir = new File(uploadPath);
-        if (!uploadDir.exists()) {
-            uploadDir.mkdirs();
-        }
+//        File uploadDir = new File(path);
+//        if (!uploadDir.exists()) {
+//            uploadDir.mkdirs();
+//        }
         File web = new File(path);
         if (!web.exists()) {
             web.mkdirs();

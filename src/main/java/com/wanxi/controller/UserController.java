@@ -5,9 +5,12 @@ import com.wanxi.entity.User;
 import com.wanxi.result.ResultModel;
 import com.wanxi.service.UserService;
 import com.github.pagehelper.PageHelper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.Jedis;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -26,6 +29,7 @@ import javax.servlet.http.HttpSession;
 @RestController
 @RequestMapping("user")
 public class UserController {
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     private UserService userService;
     private Jedis jedis = new Jedis();
 
@@ -40,6 +44,19 @@ public class UserController {
         jedis.set("resultModel", String.valueOf(resultModel));
         if (resultModel.getMsg().equals("success")){
             session.setAttribute("loginName",user.getUsername());
+            //设置session过期时间，单位s
+            session.setMaxInactiveInterval(60 * 10);
+            Cookie[] cookie = request.getCookies();
+            for (int i = 0; i < cookie.length; i++) {
+                if (cookie[i].getValue() != null) {
+                    logger.info((String) session.getAttribute("loginName"));
+                    logger.info("Cookie:" + cookie[i].getName() + "=" + cookie[i].getValue() + ",i=" + i);
+                    jedis.set(cookie[i].getName(), cookie[i].getValue());
+                    jedis.expire(cookie[i].getName(), 600);
+                }
+            }
+//            int i = 10/0;
+            resultModel.setMsg(user.getUsername());
         }
         //验证码校验
         if (!checkCode.equals("")) {

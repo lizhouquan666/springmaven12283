@@ -24,7 +24,7 @@
 <!--    通过 resultType 指定查询的结果是 ProductModel 类型的数据-->
 <!--    只需要指定 resultType 的类型，MyBatis 会自动将查询的结果映射成 JavaBean 中的属性-->
     <insert id="add" parameterType="ProductModel">
-                INSERT INTO `lv_shi`.`lv_shi_service_product` (`name`, `normalPrice`, `price`, `imgHref`, `content`, `service_id`, `enable`, `is_show`)
+                INSERT INTO `lv_shi`.`lv_shi_service_product` (`name`, `normal_price`, `price`, `imgHref`, `content`, `service_id`, `enable`, `is_show`)
                  VALUES (#{name},#{normalPrice} ,#{price}, #{imgHref},#{content}, #{service_id}, #{enable}, #{is_show})
     </insert>
     <select id="findAll" parameterType="ProductModel" resultType="ProductModel">
