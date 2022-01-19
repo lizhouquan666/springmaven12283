@@ -2,13 +2,12 @@ package com.wanxi.controller;
 
 
 import com.github.pagehelper.PageHelper;
-import com.wanxi.entity.ProductModel;
 import com.wanxi.entity.TeamModel;
-import com.wanxi.result.ResultModel;
-import com.wanxi.service.ProductService;
 import com.wanxi.service.TeamService;
+import com.wanxi.tool.CommonResult;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import redis.clients.jedis.Jedis;
 
@@ -34,9 +33,9 @@ public class TeamController {
     }
 
     @RequestMapping("findAll")
-    public ResultModel findAll(TeamModel team) {
+    public CommonResult findAll(TeamModel team) {
         int count;
-        ResultModel resultModel;
+        CommonResult resultModel;
         //判断jedis中的count是否存在 减少sql查询
         if (jedis.get("count") == null) {
             count = teamService.getCount(team).getCount();
@@ -44,51 +43,48 @@ public class TeamController {
         } else {
             count = Integer.valueOf(jedis.get("count"));
         }
-        //分页
-        PageHelper.startPage(team.getPage(), team.getLimit());
-        resultModel = teamService.findAll(team);
-        resultModel.setCount(count);
-        return resultModel;
+
+        return teamService.findAll(team);
     }
 
 
     @RequestMapping("enable")
-    public ResultModel enable(TeamModel team) {
-        ResultModel resultModel = teamService.enable(team);
-        return resultModel;
+    public CommonResult enable(TeamModel team) {
+        CommonResult commonResult = teamService.enable(team);
+        return commonResult;
     }
 
     @RequestMapping("findById")
-    public ResultModel findById(TeamModel team) {
-        ResultModel resultModel = teamService.findById(team);
-        return resultModel;
+    public CommonResult findById(TeamModel team) {
+        CommonResult commonResult = teamService.findById(team);
+        return commonResult;
     }
 
     @RequestMapping("delete")
-    public ResultModel delete(TeamModel team) {
-        ResultModel resultModel = teamService.del(team);
-        return resultModel;
+    public CommonResult delete(TeamModel team) {
+        CommonResult commonResult = teamService.del(team);
+        return commonResult;
     }
 
     @RequestMapping("add")
-    public ResultModel add(TeamModel team) {
+    public CommonResult add(TeamModel team) {
         int count;
         count = teamService.getCount(team).getCount();
         jedis.set("count", String.valueOf(count));
         jedis.expire("count", 600);
-        ResultModel resultModel = teamService.add(team);
-        return resultModel;
+        CommonResult commonResult = teamService.add(team);
+        return commonResult;
     }
 
     @RequestMapping("update")
-    public ResultModel edit(TeamModel team) {
-        ResultModel resultModel = teamService.update(team);
-        return resultModel;
+    public CommonResult edit(TeamModel team) {
+        CommonResult commonResult = teamService.update(team);
+        return commonResult;
     }
 
-    @RequestMapping("findTeamId")
-    public ResultModel findServiceType(TeamModel team) {
-        ResultModel resultModel = teamService.findTeamId(team);
-        return resultModel;
+    @RequestMapping(value = "findTeamId",method = RequestMethod.GET )
+    public CommonResult findServiceType(TeamModel team) {
+        CommonResult commonResult = teamService.findTeamId(team);
+        return commonResult;
     }
 }

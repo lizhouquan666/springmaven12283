@@ -2,12 +2,12 @@ package com.wanxi.service;
 
 
 import com.wanxi.entity.NewModel;
-import com.wanxi.result.ResultModel;
+import com.wanxi.tool.CommonResult;
 
 public interface NewService extends BaseService<NewModel>{
 
 
-    ResultModel addText(NewModel newModel);
+    CommonResult addText(NewModel newModel);
 
-    ResultModel findNewId(NewModel newModel);
+    CommonResult findNewId(NewModel newModel);
 }

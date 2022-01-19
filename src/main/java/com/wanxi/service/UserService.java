@@ -3,10 +3,12 @@ package com.wanxi.service;
 
 import com.wanxi.entity.User;
 import com.wanxi.result.ResultModel;
+import com.wanxi.tool.CommonResult;
 
 public interface UserService extends BaseService<User>{
 
-    ResultModel login(User user);
-    ResultModel enable(User user);
-    ResultModel addText(User user);
+    CommonResult login(User user);
+    CommonResult enable(User user);
+
+    CommonResult addText(User user);
 }

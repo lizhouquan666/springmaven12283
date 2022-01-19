@@ -5,6 +5,7 @@ import com.github.pagehelper.PageHelper;
 import com.wanxi.entity.ProductModel;
 import com.wanxi.result.ResultModel;
 import com.wanxi.service.ProductService;
+import com.wanxi.tool.CommonResult;
 import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.Jedis;
 
@@ -30,9 +31,9 @@ public class ProductController {
     }
 
     @RequestMapping("findAll")
-    public ResultModel findAll(ProductModel product) {
+    public CommonResult findAll(ProductModel product) {
         int count;
-        ResultModel resultModel;
+        CommonResult commonResult;
         //判断jedis中的count是否存在 减少sql查询
         if (jedis.get("count") == null) {
             count = productService.getCount(product).getCount();
@@ -41,50 +42,51 @@ public class ProductController {
             count = Integer.valueOf(jedis.get("count"));
         }
         //分页
-        PageHelper.startPage(product.getPage(), product.getLimit());
-        resultModel = productService.findAll(product);
-        resultModel.setCount(count);
-        return resultModel;
+//        PageHelper.startPage(product.getPage(), product.getLimit());
+//        commonResult = productService.findAll(product);
+//        commonResult.setCount(count);
+//        return commonResult;
+        return productService.findAll(product);
     }
 
 
     @RequestMapping("enable")
-    public ResultModel enable(ProductModel product) {
-        ResultModel resultModel = productService.enable(product);
-        return resultModel;
+    public CommonResult enable(ProductModel product) {
+        CommonResult commonResult = productService.enable(product);
+        return commonResult;
     }
 
     @RequestMapping("findById")
-    public ResultModel findById(ProductModel product) {
-        ResultModel resultModel = productService.findById(product);
-        return resultModel;
+    public CommonResult findById(ProductModel product) {
+        CommonResult commonResult = productService.findById(product);
+        return commonResult;
     }
 
     @RequestMapping("delete")
-    public ResultModel delete(ProductModel product) {
-        ResultModel resultModel = productService.del(product);
-        return resultModel;
+    public CommonResult delete(ProductModel product) {
+        CommonResult commonResult = productService.del(product);
+        return commonResult;
     }
 
     @RequestMapping("add")
-    public ResultModel add(ProductModel product) {
+    public CommonResult add(ProductModel product) {
         int count;
         count = productService.getCount(product).getCount();
         jedis.set("count", String.valueOf(count));
         jedis.expire("count", 600);
-        ResultModel resultModel = productService.add(product);
-        return resultModel;
+        CommonResult commonResult = productService.add(product);
+        return commonResult;
     }
 
     @RequestMapping("update")
-    public ResultModel edit(ProductModel product) {
-        ResultModel resultModel = productService.update(product);
-        return resultModel;
+    public CommonResult edit(ProductModel product) {
+        CommonResult commonResult = productService.update(product);
+        return commonResult;
     }
 
     @RequestMapping("findServiceType")
-    public ResultModel findServiceType(ProductModel product) {
-        ResultModel resultModel = productService.findServiceType(product);
-        return resultModel;
+    public CommonResult findServiceType(ProductModel product) {
+        CommonResult commonResult = productService.findServiceType(product);
+        return commonResult;
     }
 }

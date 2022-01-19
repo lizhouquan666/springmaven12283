@@ -1,9 +1,13 @@
 package com.wanxi.service.impl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.wanxi.entity.TeamModel;
 import com.wanxi.mapper.TeamDao;
 import com.wanxi.result.ResultModel;
 import com.wanxi.service.TeamService;
+import com.wanxi.tool.CommonResult;
 import com.wanxi.tool.Date;
 import org.springframework.stereotype.Service;
 
@@ -19,57 +23,60 @@ public class TeamServiceImpl implements TeamService {
     }
 
     @Override
-    public ResultModel findAll(TeamModel teamModel) {
+    public CommonResult findAll(TeamModel teamModel) {
+        //分页
+        Page page= PageHelper.startPage(teamModel.getPage(), teamModel.getLimit());
         List<TeamModel> teamModels = dao.findAll(teamModel);
-        return ResultModel.getModel(teamModels);
+        PageInfo info =  new PageInfo<>(page.getResult());
+        return CommonResult.success(teamModels, Math.toIntExact(info.getTotal()));
     }
 
     @Override
-    public ResultModel del(TeamModel model) {
+    public CommonResult del(TeamModel model) {
         int count = dao.del(model);
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel add(TeamModel model) {
+    public CommonResult add(TeamModel model) {
         int count = dao.add(model);
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel findById(TeamModel teamModel) {
+    public CommonResult findById(TeamModel teamModel) {
         TeamModel model = dao.findById(teamModel);
-        return ResultModel.getModel(model);
+        return CommonResult.success(model);
     }
 
     @Override
-    public ResultModel update(TeamModel model) {
+    public CommonResult update(TeamModel model) {
         Date date = new Date();
         int count = dao.update(model);
         model.setUpdateTime(String.valueOf(date));
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel getCount(TeamModel model) {
+    public CommonResult getCount(TeamModel model) {
         int count = dao.getCount(model);
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel enable(TeamModel teamModel) {
+    public CommonResult enable(TeamModel teamModel) {
         int i = dao.enable (teamModel);
-        return ResultModel.getModel (i);
+        return CommonResult.success (i);
     }
 
     @Override
-    public ResultModel addText(TeamModel teamModel) {
-        return ResultModel.getModel (dao.addText (teamModel));
+    public CommonResult addText(TeamModel teamModel) {
+        return CommonResult.success (dao.addText (teamModel));
     }
 
     @Override
-    public ResultModel findTeamId(TeamModel teamModel) {
+    public CommonResult findTeamId(TeamModel teamModel) {
         List<TeamModel> teamModels = dao.findTeamId(teamModel);
-        return ResultModel.getModel(teamModels);
+        return CommonResult.success(teamModels);
     }
 }

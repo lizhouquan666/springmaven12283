@@ -1,9 +1,14 @@
 package com.wanxi.service.impl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.wanxi.entity.NewModel;
+import com.wanxi.entity.ProductModel;
 import com.wanxi.mapper.NewDao;
 import com.wanxi.result.ResultModel;
 import com.wanxi.service.NewService;
+import com.wanxi.tool.CommonResult;
 import com.wanxi.tool.Date;
 import org.springframework.stereotype.Service;
 
@@ -19,57 +24,62 @@ public class NewServiceImpl implements NewService {
     }
 
     @Override
-    public ResultModel findAll(NewModel newModel) {
+    public CommonResult findAll(NewModel newModel) {
+        //分页
+        Page page= PageHelper.startPage(newModel.getPage(), newModel.getLimit());
         List<NewModel> newModels = dao.findAll(newModel);
-        return ResultModel.getModel(newModels);
+        PageInfo info =  new PageInfo<>(page.getResult());
+        return CommonResult.success(newModels, Math.toIntExact(info.getTotal()));
+//        List<NewModel> newModels = dao.findAll(newModel);
+//        return CommonResult.success(newModels);
     }
 
     @Override
-    public ResultModel del(NewModel model) {
+    public CommonResult del(NewModel model) {
         int count = dao.del(model);
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel add(NewModel model) {
+    public CommonResult add(NewModel model) {
         int count = dao.add(model);
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel findById(NewModel newModel) {
+    public CommonResult findById(NewModel newModel) {
         NewModel model = dao.findById(newModel);
-        return ResultModel.getModel(model);
+        return CommonResult.success(model);
     }
 
     @Override
-    public ResultModel update(NewModel model) {
+    public CommonResult update(NewModel model) {
         Date date = new Date();
         int count = dao.update(model);
         model.setUpdateTime(String.valueOf(date));
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel getCount(NewModel model) {
+    public CommonResult getCount(NewModel model) {
         int count = dao.getCount(model);
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel enable(NewModel newModel) {
+    public CommonResult enable(NewModel newModel) {
         int i = dao.enable (newModel);
-        return ResultModel.getModel (i);
+        return CommonResult.success (i);
     }
 
     @Override
-    public ResultModel addText(NewModel newModel) {
-        return ResultModel.getModel (dao.addText (newModel));
+    public CommonResult addText(NewModel newModel) {
+        return CommonResult.success (dao.addText (newModel));
     }
 
     @Override
-    public ResultModel findNewId(NewModel newModel) {
+    public CommonResult findNewId(NewModel newModel) {
         List<NewModel> newModels = dao.findNewId(newModel);
-        return ResultModel.getModel(newModels);
+        return CommonResult.success(newModels);
     }
 }

@@ -4,11 +4,12 @@ package com.wanxi.service;
 import com.wanxi.entity.ProductModel;
 import com.wanxi.entity.User;
 import com.wanxi.result.ResultModel;
+import com.wanxi.tool.CommonResult;
 
 public interface ProductService extends BaseService<ProductModel>{
 
 
-    ResultModel addText(ProductModel productModel);
+    CommonResult addText(ProductModel productModel);
 
-    ResultModel findServiceType(ProductModel product);
+    CommonResult findServiceType(ProductModel product);
 }

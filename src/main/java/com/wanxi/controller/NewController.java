@@ -3,8 +3,8 @@ package com.wanxi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.wanxi.entity.NewModel;
-import com.wanxi.result.ResultModel;
 import com.wanxi.service.NewService;
+import com.wanxi.tool.CommonResult;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +20,10 @@ import redis.clients.jedis.Jedis;
 //        浏览器是否将本域名下的 cookie 信息携带至跨域服务器中。
 //        默认携带至跨域服务器中，但要实现 cookie 共享还需要前端在 AJAX 请求中打开 withCredentials 属性。
 //https://zhuanlan.zhihu.com/p/66789473
+//@CrossOrigin(allowCredentials="true", allowedHeaders="*")
+
 @CrossOrigin(allowCredentials="true", allowedHeaders="*")
+
 @RestController
 @RequestMapping("news")
 public class NewController {
@@ -32,9 +35,9 @@ public class NewController {
     }
 
     @RequestMapping("findAll")
-    public ResultModel findAll(NewModel model) {
+    public CommonResult findAll(NewModel model) {
         int count;
-        ResultModel resultModel;
+        CommonResult resultModel;
         //判断jedis中的count是否存在 减少sql查询
         if (jedis.get("count") == null) {
             count = newService.getCount(model).getCount();
@@ -42,51 +45,48 @@ public class NewController {
         } else {
             count = Integer.valueOf(jedis.get("count"));
         }
-        //分页
-        PageHelper.startPage(model.getPage(), model.getLimit());
-        resultModel = newService.findAll(model);
-        resultModel.setCount(count);
-        return resultModel;
+
+        return newService.findAll(model);
     }
 
 
     @RequestMapping("enable")
-    public ResultModel enable(NewModel model) {
-        ResultModel resultModel = newService.enable(model);
-        return resultModel;
+    public CommonResult enable(NewModel model) {
+        CommonResult commonResult = newService.enable(model);
+        return commonResult;
     }
 
     @RequestMapping("findById")
-    public ResultModel findById(NewModel model) {
-        ResultModel resultModel = newService.findById(model);
-        return resultModel;
+    public CommonResult findById(NewModel model) {
+        CommonResult commonResult = newService.findById(model);
+        return commonResult;
     }
 
     @RequestMapping("delete")
-    public ResultModel delete(NewModel model) {
-        ResultModel resultModel = newService.del(model);
-        return resultModel;
+    public CommonResult delete(NewModel model) {
+        CommonResult commonResult = newService.del(model);
+        return commonResult;
     }
 
     @RequestMapping("add")
-    public ResultModel add(NewModel model) {
+    public CommonResult add(NewModel model) {
         int count;
         count = newService.getCount(model).getCount();
         jedis.set("count", String.valueOf(count));
         jedis.expire("count", 600);
-        ResultModel resultModel = newService.add(model);
-        return resultModel;
+        CommonResult commonResult = newService.add(model);
+        return commonResult;
     }
 
     @RequestMapping("update")
-    public ResultModel edit(NewModel model) {
-        ResultModel resultModel = newService.update(model);
-        return resultModel;
+    public CommonResult edit(NewModel model) {
+        CommonResult commonResult = newService.update(model);
+        return commonResult;
     }
 
     @RequestMapping("findNewId")
-    public ResultModel findNewId(NewModel model) {
-        ResultModel resultModel = newService.findNewId(model);
-        return resultModel;
+    public CommonResult findNewId(NewModel model) {
+        CommonResult commonResult = newService.findNewId(model);
+        return commonResult;
     }
 }

@@ -3,11 +3,12 @@ package com.wanxi.service;
 
 import com.wanxi.entity.TeamModel;
 import com.wanxi.result.ResultModel;
+import com.wanxi.tool.CommonResult;
 
 public interface TeamService extends BaseService<TeamModel>{
 
 
-    ResultModel addText(TeamModel teamModel);
+    CommonResult addText(TeamModel teamModel);
 
-    ResultModel findTeamId(TeamModel team);
+    CommonResult findTeamId(TeamModel team);
 }

@@ -1,10 +1,15 @@
 package com.wanxi.service.impl;
 
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.wanxi.entity.TeamModel;
 import com.wanxi.entity.User;
 import com.wanxi.mapper.UserDao;
 import com.wanxi.result.ResultModel;
 import com.wanxi.service.UserService;
+import com.wanxi.tool.CommonResult;
 import com.wanxi.tool.Date;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +24,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ResultModel login (User user) {
+    public CommonResult login (User user) {
         String msg;
         User i= dao.findByUsernameAndPassword (user);
         if (i==null){
@@ -27,55 +32,72 @@ public class UserServiceImpl implements UserService {
         }else{
             msg="success";
         }
-        return ResultModel.getModel (msg);
+        return CommonResult.success(msg);
     }
 
     @Override
-    public ResultModel findAll (User user) {
-        List<User> users= dao.findAll(user);
-        return ResultModel.getModel(users);
+    public CommonResult findAll (User user) {
+        //分页
+        Page page= PageHelper.startPage(user.getPage(), user.getLimit());
+        List<User> users = dao.findAll(user);
+        PageInfo info =  new PageInfo<>(page.getResult());
+        return CommonResult.success(users, Math.toIntExact(info.getTotal()));
+//        List<User> users= dao.findAll(user);
+//        return CommonResult.success(users);
     }
 
     @Override
-    public ResultModel del (User user) {
+    public CommonResult del (User user) {
         int count = dao.del (user);
-        return ResultModel.getModel (count);
+        if (count!=1){
+            return CommonResult.failed();
+        }
+        return CommonResult.success();
     }
 
     @Override
-    public ResultModel add (User user) {
+    public CommonResult add (User user) {
         int count = dao.add (user);
-        return ResultModel.getModel (count);
+        if (count!=1){
+            return CommonResult.failed();
+        }
+        return CommonResult.success();
     }
 
     @Override
-    public ResultModel findById (User user) {
+    public CommonResult findById (User user) {
         User model = dao.findById (user);
-        return ResultModel.getModel (model);
+        return CommonResult.success(model);
     }
 
     @Override
-    public ResultModel update (User user) {
+    public CommonResult update (User user) {
         Date date = new Date();
         int count = dao.update (user);
+        if (count!=1){
+            return CommonResult.failed();
+        }
         user.setUpdateTime(String.valueOf(date));
-        return ResultModel.getModel (count);
+        return CommonResult.success (count);
     }
 
     @Override
-    public ResultModel getCount (User user) {
+    public CommonResult getCount (User user) {
         int count = dao.getCount (user);
-        return ResultModel.getModel (count);
+        if (count!=1){
+            return CommonResult.failed();
+        }
+        return CommonResult.success (count);
     }
 
     @Override
-    public ResultModel enable (User User) {
-        int i = dao.enable (User);
-        return ResultModel.getModel (i);
+    public CommonResult enable (User user) {
+        int i = dao.enable (user);
+        return CommonResult.success (i);
     }
 
     @Override
-    public ResultModel addText (User user) {
-        return ResultModel.getModel (dao.addText (user));
+    public CommonResult addText(User user) {
+        return CommonResult.success (dao.addText (user));
     }
 }

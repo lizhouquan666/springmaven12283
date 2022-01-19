@@ -1,9 +1,14 @@
 package com.wanxi.service.impl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.wanxi.entity.ProductModel;
+import com.wanxi.entity.User;
 import com.wanxi.mapper.ProductDao;
 import com.wanxi.result.ResultModel;
 import com.wanxi.service.ProductService;
+import com.wanxi.tool.CommonResult;
 import com.wanxi.tool.Date;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -18,57 +23,62 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ResultModel findAll(ProductModel productModel) {
+    public CommonResult findAll(ProductModel productModel) {
+        //分页
+        Page page= PageHelper.startPage(productModel.getPage(), productModel.getLimit());
         List<ProductModel> productModels = dao.findAll(productModel);
-        return ResultModel.getModel(productModels);
+        PageInfo info =  new PageInfo<>(page.getResult());
+        return CommonResult.success(productModels, Math.toIntExact(info.getTotal()));
+//        List<ProductModel> productModels = dao.findAll(productModel);
+//        return CommonResult.success(productModels);
     }
 
     @Override
-    public ResultModel del(ProductModel model) {
+    public CommonResult del(ProductModel model) {
         int count = dao.del(model);
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel add(ProductModel model) {
+    public CommonResult add(ProductModel model) {
         int count = dao.add(model);
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel findById(ProductModel productModel) {
+    public CommonResult findById(ProductModel productModel) {
         ProductModel model = dao.findById(productModel);
-        return ResultModel.getModel(model);
+        return CommonResult.success(model);
     }
 
     @Override
-    public ResultModel update(ProductModel model) {
+    public CommonResult update(ProductModel model) {
         Date date = new Date();
         int count = dao.update(model);
         model.setUpdateTime(String.valueOf(date));
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel getCount(ProductModel model) {
+    public CommonResult getCount(ProductModel model) {
         int count = dao.getCount(model);
-        return ResultModel.getModel(count);
+        return CommonResult.success(count);
     }
 
     @Override
-    public ResultModel enable(ProductModel productModel) {
+    public CommonResult enable(ProductModel productModel) {
         int i = dao.enable (productModel);
-        return ResultModel.getModel (i);
+        return CommonResult.success (i);
     }
 
     @Override
-    public ResultModel addText(ProductModel productModel) {
-        return ResultModel.getModel (dao.addText (productModel));
+    public CommonResult addText(ProductModel productModel) {
+        return CommonResult.success (dao.addText (productModel));
     }
 
     @Override
-    public ResultModel findServiceType(ProductModel productModel) {
+    public CommonResult findServiceType(ProductModel productModel) {
         List<ProductModel> productModels = dao.findServiceType(productModel);
-        return ResultModel.getModel(productModels);
+        return CommonResult.success(productModels);
     }
 }

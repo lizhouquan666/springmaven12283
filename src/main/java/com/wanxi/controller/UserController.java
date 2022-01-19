@@ -2,15 +2,10 @@ package com.wanxi.controller;
 
 
 import com.wanxi.entity.User;
-import com.wanxi.result.ResultModel;
 import com.wanxi.service.UserService;
-import com.github.pagehelper.PageHelper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.wanxi.tool.CommonResult;
 import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.Jedis;
-
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -29,7 +24,7 @@ import javax.servlet.http.HttpSession;
 @RestController
 @RequestMapping("user")
 public class UserController {
-    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+//    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     private UserService userService;
     private Jedis jedis = new Jedis();
 
@@ -37,43 +32,47 @@ public class UserController {
         this.userService = service;
     }
     @RequestMapping(value = "login", method = RequestMethod.POST)
-    public ResultModel login(@RequestBody User user, HttpSession session, HttpServletResponse response, HttpServletRequest request) {
-        String checkCode = (String) session.getAttribute("verifyCodeValue");
-        ResultModel resultModel = userService.login(user);
+    public CommonResult login(@RequestBody User user, HttpServletRequest request, HttpServletResponse response) {
+
+
+//        String checkCode = (String) session.getAttribute("verifyCodeValue");
+        CommonResult commonResult = userService.login(user);
         Jedis jedis  = new Jedis("localhost");
-        jedis.set("resultModel", String.valueOf(resultModel));
-        if (resultModel.getMsg().equals("success")){
-            session.setAttribute("loginName",user.getUsername());
+        jedis.set("commonResult", String.valueOf(commonResult));
+        if (commonResult.getMessage().equals("success")){
+            request.getSession().setAttribute("loginName",user.getUsername());
+//            session.setAttribute("loginName",user.getUsername());
             //设置session过期时间，单位s
-            session.setMaxInactiveInterval(60 * 10);
-            Cookie[] cookie = request.getCookies();
-            for (int i = 0; i < cookie.length; i++) {
-                if (cookie[i].getValue() != null) {
-                    logger.info((String) session.getAttribute("loginName"));
-                    logger.info("Cookie:" + cookie[i].getName() + "=" + cookie[i].getValue() + ",i=" + i);
-                    jedis.set(cookie[i].getName(), cookie[i].getValue());
-                    jedis.expire(cookie[i].getName(), 600);
-                }
-            }
+//            session.setMaxInactiveInterval(60 * 10);
+
+//            Cookie[] cookie = request.getCookies();
+//            for (int i = 0; i < cookie.length; i++) {
+//                if (cookie[i].getValue() != null) {
+//                    logger.info((String) session.getAttribute("loginName"));
+//                    logger.info("Cookie:" + cookie[i].getName() + "=" + cookie[i].getValue() + ",i=" + i);
+//                    jedis.set(cookie[i].getName(), cookie[i].getValue());
+//                    jedis.expire(cookie[i].getName(), 600);
+//                }
+//            }
 //            int i = 10/0;
-            resultModel.setMsg(user.getUsername());
+            commonResult.getMessage();
         }
         //验证码校验
-        if (!checkCode.equals("")) {
-            if (!checkCode.equalsIgnoreCase(user.getCode())) {
-                resultModel.setData("codeErr");
-            }
-        }else{
-            resultModel.setMsg("codeNull");
-        }
-        return resultModel;
+//        if (!checkCode.equals("")) {
+//            if (!checkCode.equalsIgnoreCase(user.getCode())) {
+//                commonResult.setData("codeErr");
+//            }
+//        }else{
+//            commonResult.setMessage("codeNull");
+//        }
+        return commonResult;
     }
 
 
     @RequestMapping("findAll")
-    public ResultModel findAll(User user) {
+    public CommonResult findAll(User user) {
         int count;
-        ResultModel resultModel;
+        CommonResult commonResult;
         //判断jedis中的count是否存在 减少sql查询
         if (jedis.get("count")==null){
             count = userService.getCount(user).getCount();
@@ -82,40 +81,40 @@ public class UserController {
             count=Integer.valueOf(jedis.get("count"));
         }
         //分页
-        PageHelper.startPage(user.getPage(),user.getLimit());
-        resultModel = userService.findAll(user);
-        resultModel.setCount(count);
-        return resultModel;
+//        PageHelper.startPage(user.getPage(),user.getLimit());
+//        commonResult = userService.findAll(user);
+//        commonResult.setCount(count);
+        return userService.findAll(user);
     }
 
 
     @RequestMapping("enable")
-    public ResultModel enable(User user) {
-        ResultModel resultModel = userService.enable(user);
-        return resultModel;
+    public CommonResult enable(User user) {
+        CommonResult commonResult = userService.enable(user);
+        return commonResult;
     }
     @RequestMapping("findById")
-    public ResultModel findById(User user){
-        ResultModel resultModel = userService.findById(user);
-        return resultModel;
+    public CommonResult findById(User user){
+        CommonResult commonResult = userService.findById(user);
+        return commonResult;
     }
     @RequestMapping("delete")
-    public ResultModel delete(User user){
-        ResultModel resultModel = userService.del(user);
-        return  resultModel;
+    public CommonResult delete(User user){
+        CommonResult commonResult = userService.del(user);
+        return  commonResult;
     }
     @RequestMapping("add")
-    public ResultModel add(User user){
+    public CommonResult add(User user){
         int count;
         count = userService.getCount(user).getCount();
         jedis.set("count",String.valueOf(count));
         jedis.expire("count",600);
-        ResultModel resultModel = userService.add(user);
-        return  resultModel;
+        CommonResult commonResult = userService.add(user);
+        return  commonResult;
     }
     @RequestMapping("update")
-    public ResultModel edit(User user){
-        ResultModel resultModel = userService.update(user);
-        return resultModel;
+    public CommonResult edit(User user){
+        CommonResult commonResult = userService.update(user);
+        return commonResult;
     }
 }

@@ -26,6 +26,8 @@
             <mvc:exclude-mapping path="/X-admin/css/**"/>
             <mvc:exclude-mapping path="/user/**"/>
             <mvc:exclude-mapping path="/product/**"/>
+            <mvc:exclude-mapping path="/news/**"/>
+            <mvc:exclude-mapping path="/team/**"/>
             <mvc:exclude-mapping path="/upload/**"/>
             <mvc:exclude-mapping path="/code/checkCode"/>
             <bean class="com.wanxi.interceptor.Interceptor"/>
@@ -51,4 +53,5 @@
         <property name="prefix" value="/"/>
         <property name="suffix" value=".html"/>
     </bean>
+    <bean id="exceptionHandler" class="com.wanxi.exception.ExceptionResolver"/>
 </beans>

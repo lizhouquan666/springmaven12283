@@ -3,6 +3,7 @@ package com.wanxi.controller;
 import com.alibaba.fastjson.JSON;
 import com.wanxi.entity.ImgModel;
 import com.wanxi.result.ResultModel;
+import com.wanxi.tool.CommonResult;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
@@ -131,6 +132,6 @@ public class UploadController {
         ImgModel imgModel = new ImgModel();
         String src = "/" + UPLOAD_DIRECTORY + "/" + fileName;
         imgModel.setSrc(src);
-        resp.getWriter().println(JSON.toJSONString(ResultModel.getModel(imgModel)));
+        resp.getWriter().println(JSON.toJSONString(CommonResult.success(imgModel)));
     }
 }
